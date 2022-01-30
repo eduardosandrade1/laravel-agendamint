@@ -18,7 +18,7 @@ class CreateCompanyTable extends Migration
             $table->string('responsavel', 45);
             $table->string('razao_social', 45);
             $table->string('chave_pix', 45);
-            $table->string('tipo_chave_pix', 45);
+            $table->unsignedBigInteger('tipo_chave_pix');
             $table->string('banco', 45);
             $table->string('cpf_cnpj', 14);
             $table->string('cor_primaria', 7)->nullable()->default('#031927');

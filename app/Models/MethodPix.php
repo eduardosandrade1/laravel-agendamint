@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class MethodPix extends Model
 {
     use HasFactory;
+    protected $table = 'method_pix';
+    public $timestamps = false;
 }

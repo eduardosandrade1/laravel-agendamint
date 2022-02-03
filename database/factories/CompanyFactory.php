@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\MethodPix;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class CompanyFactory extends Factory
@@ -17,7 +18,7 @@ class CompanyFactory extends Factory
             'responsavel'   => $this->faker->name(),
             'razao_social'  => $this->faker->name(),
             'chave_pix' => $this->faker->numerify(),
-            'tipo_chave_pix' => 1,
+            'tipo_chave_pix' => MethodPix::factory(),
             'banco' => 'Nubank',
             'cpf_cnpj' => '33680277000161',
             'nova' => 1,

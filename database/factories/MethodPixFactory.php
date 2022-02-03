@@ -13,13 +13,9 @@ class MethodPixFactory extends Factory
      */
     public function definition()
     {
+        $chaves = ['email', 'cpf/cnpj', 'celular', 'Aleatória'];
         return [
-            'descricao' => [
-                'email',
-                'cpf',
-                'celular',
-                'key'
-            ]
+            'descricao' => $chaves[random_int(0, (count($chaves) - 1))]
         ];
     }
 }
